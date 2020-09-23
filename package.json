@@ -1,0 +1,41 @@
+{
+  "name": "xml-to-js-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node bin/dev",
+    "nodemon": "nodemon bin/dev"
+  },
+  "author": "Maksim Tarhunakau",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/runtime": "^7.11.2",
+    "xml-stream": "^0.4.5"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  }
+}
